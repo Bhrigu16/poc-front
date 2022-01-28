@@ -5,3 +5,6 @@
     pointer-events: none;
     display: none; 
   }
+  .hidden{
+    visibility:hidden;
+ }

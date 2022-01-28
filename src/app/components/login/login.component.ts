@@ -40,13 +40,14 @@ export class LoginComponent implements OnInit {
           //console.log(response.token)
           //Storing the value in the localstorage
           sessionStorage.setItem('user',this.credentials.username);
-          console.log(sessionStorage.getItem('user'))
+          console.log("In login Service function"+sessionStorage.getItem('user'))
           //console.log("Nav bar loggedIn "+this.navBar.loggedIn);
           //this.navBar.loggedIn=true
           //this.navBar.loggedIn=true;
           
-          this.navBar.checkLogIn()
-          
+          //this.navBar.checkLogIn()
+          this.navBar.setLogIn();
+
           this.router.navigate(['/dashboard']);
 
           

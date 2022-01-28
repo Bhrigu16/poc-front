@@ -18,23 +18,23 @@
                     <mat-form-field class="full-width">
                         <mat-label>FirstName</mat-label>
                         <input 
-                        [(ngModel)]="credentials.firstname"
-                        name="firstname"
+                        [(ngModel)]="credentials.firstName"
+                        name="firstName"
                         required 
                         type="text" 
                         matInput/>
                     </mat-form-field>
-                    <mat-form-field>
+                    <mat-form-field class="full-width">
                         <mat-label>LastName</mat-label>
                         <input 
-                        [(ngModel)]="credentials.lastname"
-                        name="lastname"
+                        [(ngModel)]="credentials.lastName"
+                        name="lastName"
                         required 
                         type="text" 
                         matInput/>
                     </mat-form-field>
                     <br>
-                    <mat-form-field>
+                    <mat-form-field class="full-width">
                         <mat-label>State</mat-label>
                         <input 
                         [(ngModel)]="credentials.state"
@@ -44,7 +44,7 @@
                         matInput/>
                     </mat-form-field>
                     <br>
-                    <mat-form-field>
+                    <mat-form-field class="full-width">
                         <mat-label>Username</mat-label>
                         <input 
                         [(ngModel)]="credentials.username"
@@ -62,15 +62,6 @@
                         required type="password" matInput/>
                     </mat-form-field>
                     <br>
-                    <mat-form-field>
-                    <mat-label>Company Name</mat-label>
-                        <input 
-                        [(ngModel)]="credentials.companyname"
-                        name="companyname"
-                        required 
-                        type="text" 
-                        matInput/>
-                    </mat-form-field>
                     <br>
                     <div class="container text-center">
                         <button type="submit" mat-raised-button color="primary">Sign Up</button>

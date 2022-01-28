@@ -12,9 +12,8 @@ export class SignupComponent implements OnInit {
   credentials={
     username:'',
     password:'',
-    firstname:'',
-    lastname:'',
-    companyname:'',
+    firstName:'',
+    lastName:'',
     state:''
   }
 

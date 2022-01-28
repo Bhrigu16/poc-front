@@ -9,7 +9,7 @@ import { LoginService } from 'src/app/services/login.service';
 })
 export class NavBarComponent implements OnInit {
 
-  //public loggedIn=false;
+  
 
   public loggedIn=false;
   
@@ -26,13 +26,25 @@ export class NavBarComponent implements OnInit {
   checkLogIn(){
     console.log("In checked In"+this.loggedIn)
     this.loggedIn=this.loginService.isLoggedIn()
+   
+    //$("#step1Content").load();
+    
     console.log("after setting checked In"+this.loggedIn)
+  }
+  setLogIn(){
+    console.log("In setLogin"+this.loggedIn)
+    this.loggedIn=true;
+    console.log("after setting "+this.loggedIn)
+  }
+
+  ResetLogIn(){
+    this.loggedIn=false;
   }
 
 
   logoutUser(){
     this.loginService.logout();
     location.reload();
-  }
+  }                                                                                                        
 
 }
